@@ -1,7 +1,7 @@
-  <body class="container">
+  <body class="container  border border-primary px-0">
     <div class="col-md-12 jumbotron mb-0">
         <div class="text-center">
-            <h1> Mongo Scraper</h1>
+            <h1>Mongo Article Scraper</h1>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -10,14 +10,14 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse">
-    <ul class="navbar-nav mx-auto">
+    <div class="navbar-collapse collapse" id="navbarColor01" aria-expanded="true" style="">
+    <ul class="navbar-nav d-flex justify-content-around mx-auto">
       <li class="nav-item ">
         <a class="nav-link" href="/">Home
           <span class="sr-only">(current)</span>
         </a>
       </li>
-      <li class="nav-item active mx-5" id="scrape">
+      <li class="nav-item active" id="scrape">
         <a class="nav-link" href="/">SCRAPE
           <span class="sr-only"></span>
         </a>
@@ -31,7 +31,7 @@
   </div>
 </nav>
 
-<div class="container p-2">
+<div class="container p-3">
   <div class="row">
     <div class="col-md-12">
       {{#each result}}
@@ -48,7 +48,5 @@
     </div>
   </div>
 </div>
-
-
     <script src="app.js"></script>
-  </body>
+</body>
